@@ -6,13 +6,13 @@ body {
 }
 
 header {
-    width: 100%; /* Ocupa toda a largura da janela */
-    top: 0; /* Fixa o cabeçalho no topo da janela */
-    position: fixed; /* Torna o cabeçalho fixo */
+    width: 100%;
+    top: 0;
+    position: fixed;
     background-color: rgb(0, 0, 0);
     color: #fff;
     text-align: left;
-    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+    z-index: 1000;
     animation: fadeInDown 0.5s ease forwards;
 }
 @keyframes fadeInDown {
@@ -34,12 +34,11 @@ nav {
 
 
 nav a {
-    display: inline-block; /* Mostra os itens da lista lado a lado */
-    margin: 0 95px;
+    display: inline-block;
+    margin: 0 20px; /* Reduzir a margem para se ajustar melhor em telas menores */
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-
+    padding: 10px 15px; /* Reduzir o padding para se ajustar melhor em telas menores */
 }
 
 
@@ -65,8 +64,9 @@ footer {
 
 .quadrado {
     color: #000;
-    width: 590px;
+    width: 90%; /* Alterar para largura percentual para se ajustar a diferentes tamanhos de tela */
     height: 400px;
+    max-width: 590px;
     background-color: white;
     border: 1px solid #000; /* borda preta com 1px de espessura */
     border-radius: 20px; /* bordas minimamente arredondadas */
@@ -74,7 +74,6 @@ footer {
     display: inline-block; /* para alinhar os quadrados lado a lado */
     padding: 70px; /* preenchimento interno para o texto dentro do quadrado */
     vertical-align: top;
-
 
 }
 
@@ -136,8 +135,6 @@ footer {
     border-radius: 10px;
     margin-left: 90px;
     font-size: 18px;
-
-
 }
 
 .glow-on-hover:before {
@@ -193,6 +190,7 @@ footer {
     }
 }
 .profile-image {
+    max-width: 100%;
     position: relative;
     display: block;
     margin: -700px auto 0; /* Adiciona margem superior negativa para mover a imagem para cima */
@@ -200,6 +198,8 @@ footer {
     height: auto;
     margin-left: 430px; /* Adiciona margem à esquerda para mover a imagem para a direita */
 }
+
+
 
 .header2 h1,
 .header2 h2 {
