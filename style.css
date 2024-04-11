@@ -29,16 +29,17 @@ header {
 nav {
     color: #fff;
     text-align: center;
-    padding: 3px;
+    padding: 1px;
     width: 100%; /* Definir largura total */
 }
 
 nav a {
+    font-size: 14px;
     display: inline-block;
     margin: 0; /* Remover a margem */
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px; /* Reduzir o padding para se ajustar melhor em telas menores */
+    padding: 7px 7px; /* Reduzir o padding para se ajustar melhor em telas menores */
     transition: transform 0.3s ease; /* Adicionar transição para transformação */
 }
 
@@ -118,7 +119,7 @@ footer {
     font-family: Arial, sans-serif;
     margin-top: 40px; /* Adiciona margem superior para mover o elemento para baixo */
     background-image: url(imagens/1.png);
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir  */
     background-position: center ;
 }
 
