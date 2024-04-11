@@ -334,7 +334,13 @@ footer {
     padding: 5vw; /* Utilizando viewport width para tornar o preenchimento interno responsivo */
     margin-left: 15%; /* Ajustando a margem esquerda */
     margin-right: auto; /* Empurrar o quadrado mais para a direita */
+
+    /* Media query para ajustar a margem esquerda em telas de celulares */
+    @media screen and (max-width: 768px) {
+        margin-left: 10%; /* Ajustando a margem esquerda para telas de celulares */
+    }
 }
+
 
 
 
@@ -384,15 +390,22 @@ footer {
 
 .projeto {
     width: 90%; /* Utilizando porcentagem para largura responsiva */
-    max-width: 600px; /* Definindo uma largura máxima para evitar que o conteúdo se estenda demais */
-    margin: 0 auto; /* Centralizando o elemento */
-    margin-bottom: 30px;
+    max-width: 500px; /* Definindo uma largura máxima para evitar que o conteúdo se estenda demais */
+    margin-bottom: 10px;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(0, 116, 138);
     overflow: hidden;
     transition: transform 0.3s ease;
+
+    /* Media query para ajustar a largura em telas de celular */
+    @media screen and (max-width: 768px) {
+        width: 95%; /* Ajustando a largura para telas de celular */
+        max-width: none; /* Removendo a largura máxima */
+        border-radius: 0; /* Removendo o raio da borda */
+    }
 }
+
 
 .projeto:hover {
     transform: translateY(-5px);
@@ -459,6 +472,14 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(59, 59, 59);
     overflow: hidden;
+
+    /* Media query para ajustar a altura em telas menores */
+    @media screen and (max-width: 1440px) {
+        width: 400px; /* Largura fixa */
+        height: 600px; /* Altura fixa */
+        margin: 50px; /* Reduzir a margem para telas menores */
+
+    }
 }
 
 .certificado:hover {
@@ -470,10 +491,15 @@ footer {
     height: auto;
     border-radius: 10px 10px 0 0;
 }
-
 .certificado .info {
-    padding: 80px 20px 20px
+    padding: 80px 20px 20px; /* Padding original */
+
+    /* Media query para ajustar o padding em telas menores */
+    @media screen and (max-width: 768px) {
+        padding: 40px 10px; /* Padding ajustado para telas menores */
+    }
 }
+
 
 .certificado h3 {
     color: #070000;
