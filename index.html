@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="imagens/icons/icons8-currículo-100.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/icons/icons8-currículo-100.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
@@ -19,18 +21,19 @@
         <a href="#Sobre">Sobre</a>
         <a href="#Experiência">Experiência</a>
         <a href="#Projetos">Projetos</a>
-        <a href="#Educacao">Educação</a>
         <a href="#Certificados">Certificados</a>
     </nav>
 </header>
 
 <div id="Início" class="header2">
-    <h1>ㅤJean <br> Rodrigues </h1>
-    <h2>Desenvolvedor Backend</h2>
-    <button class="glow-on-hover" type="button">Entre em contato</button>
+    <h1>Jean</h1>
+    <h2>Rodrigues</h2>
+    <h3>Desenvolvedor Backend</h3>
+    <button id="botaoContato" class="glow-on-hover" type="button">Entre em contato</button>
     <div class='flat-under'>
         <div class='grow-container'>
-            <a href="URL_DA_REDE_SOCIAL" target="_blank" class='to-red circle-button'>
+            <a href="https://drive.usercontent.google.com/u/0/uc?id=1Too921dww2jnfvXn6mxwCuR9oQpYRwA2&export=download"
+               target="_blank" class='to-red circle-button'>
                 <i class="fa-regular fa-file" aria-hidden="true"></i>
             </a>
         </div>
@@ -45,19 +48,21 @@
             </a>
         </div>
     </div>
-    <img src="imagens/1.png" alt="Descrição da imagem" class="profile-image">
+
 </div>
+
 <section id="Sobre">
     <div class="container">
         <div class="quadrado">
             <h3>Sobre mim</h3>
-            <p>Desenvolvedor Java altamente comprometido em criar aplicativos robustos
-                e escaláveis, com experiência significativa no desenvolvimento de sistemas web e APIs RESTful. Estou
+            <p>Desenvolvedor backend em Java e estudante Analise e Desenvolvimento de Sistemas, estou em busca de uma
+                oportunidade de estágio em desenvolvimento backend. Comprometido em criar aplicativos robustos
+                e escaláveis, com experiência no desenvolvimento de sistemas web e APIs RESTful. Estou
                 sempre buscando aprimorar minhas habilidades e aprender novas tecnologias para melhorar a qualidade e
                 a eficiência do meu trabalho, Além disso, possuo habilidades sólidas em análise e resolução de
                 problemas,
                 trabalhando de forma colaborativa em equipe. Sou apaixonado por escrever código limpo
-                e de fácil manutenção, seguindo as melhores práticas de desenvolvimento</p>
+                e de fácil manutenção, seguindo as melhores práticas de desenvolvimento.</p>
         </div>
         <div class="quadrado">
             <h3>HardSkills</h3>
@@ -66,9 +71,11 @@
                 <li>Frameworks: Spring Boot, Spring MVC</li>
                 <li>Bancos de Dados: MySQL, PostgreSQL</li>
                 <li>Ferramentas de Build: Maven, Gradle</li>
-                <li>Testes: JUnit, Mockito</li>
+                <li>Testes: JUnit, Mockito, TDD</li>
                 <li>Controle de Versão: Git</li>
-                <li>Conhecimentos adicionais: RESTful APIs, Microservices Architecture, Amazon Web Services</li>
+                <li> Estrutura de dados e API de Streams </li>
+                <li>Conhecimentos adicionais: RESTful APIs, Microservices Architecture, Amazon Web Servicesﾠ</li>ﾠﾠﾠﾠﾠﾠﾠﾠﾠ
+                    ﾠﾠ
             </ul>
         </div>
     </div>
@@ -92,6 +99,7 @@
                 Minas Gerais, Brasil · Presencial<br>
                 jan de 2023 - set de 2023 · 9 meses </h4>
             <ul>
+                <br>
                 <li>Controle da qualidade dos produtos, identificando a correspondência das fabricações com os padrões
                     e critérios estabelecidos pela empresa.
                     Execução correta do processo de trabalho, identificando e informando falhas que afetassem a
@@ -160,15 +168,6 @@
         </div>
     </div>
 </section>
-<section class="Edu" id="Educacao">
-    <img src="imagens/69a379fc-d5d2-4027-965d-de14c78b346c.png">
-    <h2>ﾠﾠﾠﾠﾠEducação</h2>
-    <div class="educacao-container">
-        <p>ﾠﾠﾠﾠﾠﾠCurso Superior de Tecnologia (CST) <br>
-            ﾠﾠﾠﾠﾠAnálise e Desenvolvimento de Sistemas<br>
-            ﾠﾠﾠﾠﾠﾠﾠﾠﾠﾠ2023 - ago de 2026 - Estácio</p>
-    </div>
-</section>
 <section class="cert" id="Certificados">
     <h2>Certificados</h2>
     <div class="certificados-container">
@@ -214,6 +213,11 @@
     </div>
 </footer>
 
+<script>
+    document.getElementById("botaoContato").onclick = function() {
+        window.open("https://wa.me/5522992873160", "_blank");
+    };
+</script>
 
 </body>
 </html>
