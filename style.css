@@ -87,8 +87,8 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra sutil */
     @media screen and (max-width: 768px) {
         width: calc(100% - 40px); /* Largura de 100% menos a margem */
-        margin: 10px; /* Margem menor para telas menores */
-        padding: 10px; /* Preenchimento menor para telas menores */
+        margin: 4px; /* Margem menor para telas menores */
+        padding: 6px; /* Preenchimento menor para telas menores */
     }
 }
 
@@ -97,11 +97,18 @@ footer {
     text-align: left;
     margin-bottom: 10px; /* Adicionando margem inferior responsiva */
     line-height: 1.6; /* Adicionando espaçamento entre as linhas de texto */
+    @media screen and (max-width: 768px) {
+        padding-left: 14px; /* Remover o padding padrão do lado esquerdo */
+        font-size: 2vw; /* Tamanho da fonte responsivo */
+    }
 }
 
 .quadrado h3 {
     margin-top: 0; /* Remove a margem superior padrão */
     font-size: 3.5vw; /* Tamanho da fonte responsivo */
+    @media screen and (max-width: 768px) {
+        margin-top: 10px; /* Remove a margem superior padrão */
+    }
 }
 
 .quadrado p {
@@ -109,6 +116,9 @@ footer {
     font-size: 1.4vw; /* Tamanho da fonte responsivo */
     text-align: center;
     line-height: 1.3; /* Adicionando espaçamento entre as linhas de texto */
+    @media screen and (max-width: 768px) {
+        font-size: 2vw; /* Tamanho da fonte responsivo */
+    }
 
 }
 
@@ -127,7 +137,17 @@ footer {
     margin-top: 40px; /* Adiciona margem superior para mover o elemento para baixo */
     background-image: url(imagens/1.png);
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir  */
-    background-position: center ;
+    background-position: center
+}
+
+/* Media query para direcionar telas menores, como celulares */
+@media screen and (max-width: 768px) {
+    .header2 {
+        height: 100vh; /* Define a altura para ocupar 100% da altura da tela */
+        padding: 40px; /* Reduz o padding para acomodar a imagem */
+        background-image: url(imagens/celular.png);
+
+    }
 }
 
 .glow-on-hover {
@@ -141,9 +161,14 @@ footer {
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    margin: auto; /* Centraliza horizontalmente */
-    margin-top: 20px; /* Ajuste para alinhar verticalmente */
+    margin-top: 10px; /* Ajuste para alinhar verticalmente */
     font-size: 18px;
+    @media screen and (max-width: 768px) {
+        width: 130px;
+        height: 30px;
+        font-size: 10px;
+    }
+
 }
 
 
@@ -249,25 +274,23 @@ footer {
 
 .circle-button {
     font-family: 'Roboto', sans-serif;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.87);
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem;
     border-radius: 50%;
-    transition: all 0.2s ease;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
 
 }
+
+
 
 .flat-under {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: auto; /* Centraliza horizontalmente */
     margin-right: auto; /* Centraliza horizontalmente */
-}
-
-
-
-.circle-button:hover {
-    animation: circle-anim 0.3s ease forwards;
-    transition: all 0.4s ease;
 }
 
 .grow-container {
@@ -275,40 +298,17 @@ footer {
     margin: 1em;
 }
 
-.to-red:hover {
-    background: #9467ff;
-}
-
-.to-facebook:hover {
-    background: #2b2e8a;
-}
-
-.to-linkedin:hover {
-    background: #0077B5;
-}
-
-@keyframes circle-anim {
-    0% {
-
-    }
-
-    90% {
-        padding: 0.35em;
-        margin: -0.35em;
-    }
-
-    100% {
-        padding: 0.25em;
-        margin: -0.25em;
-    }
-}
 
 .Exp1 {
     display: flex;
     align-items: center;
     background: linear-gradient(0.25turn, #8C52FF, #68C6B8);
     padding: 42px;
+    @media screen and (max-width: 768px) {
+        height: 600px;
+    }
 }
+
 
 .Exp1 h2 {
     font-family: "Alice", serif;
@@ -317,10 +317,22 @@ footer {
     margin: 0; /* Remover margem padrão */
     line-height: 1.2; /* Ajustando a altura da linha para melhorar a aparência do texto em várias linhas */
     padding-left: 35px;
+
+
+    @media screen and (max-width: 768px) {
+        font-size: 8.2vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
+        margin-left: -20%; /* Ajustando a margem esquerda para telas de celulares */
+    }
 }
+
 
 .containerExp {
     flex: 1; /* Ocupa o restante do espaço disponível */
+    /* Media query para ajustar a margem esquerda em telas de celulares */
+    @media screen and (max-width: 768px) {
+        margin-left: 10%; /* Ajustando a margem esquerda para telas de celulares */
+
+    }
 }
 
 .quadradoExp {
@@ -337,7 +349,9 @@ footer {
 
     /* Media query para ajustar a margem esquerda em telas de celulares */
     @media screen and (max-width: 768px) {
-        margin-left: 10%; /* Ajustando a margem esquerda para telas de celulares */
+        margin-left: 1%; /* Ajustando a margem esquerda para telas de celulares */
+        max-width: 1200px; /* Definindo uma largura máxima para evitar que o conteúdo se estenda demais */
+        width: 50vw; /* Definindo a largura do retângulo */
     }
 }
 
@@ -355,11 +369,19 @@ footer {
     font-size: 1.5vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
     margin: 0; /* Remover margem padrão */
     line-height: 1.4; /* Ajustando a altura da linha para melhorar a aparência do texto em várias linhas */
+
+    @media screen and (max-width: 768px) {
+        font-size: 3vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
+    }
 }
 
 .quadradoExp p {
     margin: 0; /* Remover margem padrão */
     font-size: 2.3vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
+    @media screen and (max-width: 768px) {
+        font-size: 4vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
+    }
+
 }
 
 .quadradoExp ul {
@@ -371,6 +393,9 @@ footer {
 .quadradoExp li {
     font-size: 1.1vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
     margin-bottom: 10px;
+    @media screen and (max-width: 768px) {
+        font-size: 3vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
+    }
 }
 
 
@@ -386,6 +411,11 @@ footer {
     font-family: "Alice", serif;
     text-align: center;
     font-size: 4vw; /* Usando viewport width para tornar o tamanho da fonte responsivo */
+
+    @media screen and (max-width: 768px) {
+        font-size: 15vw; /* Usando viewport width para tornar o tamanho da fonte responsivo */
+        margin-top: -10px; /* Movendo o H2 para cima */
+    }
 }
 
 .projeto {
@@ -398,12 +428,12 @@ footer {
     overflow: hidden;
     transition: transform 0.3s ease;
 
-    /* Media query para ajustar a largura em telas de celular */
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1440px) {
         width: 95%; /* Ajustando a largura para telas de celular */
-        max-width: none; /* Removendo a largura máxima */
+        max-width: 400px; /* Definindo uma largura máxima para evitar que o conteúdo se estenda demais */
         border-radius: 0; /* Removendo o raio da borda */
     }
+
 }
 
 
@@ -477,6 +507,11 @@ footer {
     @media screen and (max-width: 1440px) {
         width: 400px; /* Largura fixa */
         height: 600px; /* Altura fixa */
+        margin: 50px; /* Reduzir a margem para telas menores */
+
+    }@media screen and (max-width: 768px) {
+        width: 400px; /* Largura fixa */
+        height: 500px; /* Altura fixa */
         margin: 50px; /* Reduzir a margem para telas menores */
 
     }
@@ -569,26 +604,38 @@ footer:hover {
 
 .header2 h1, .header2 h2 {
     font-family: 'Glacial Indifference', serif;
-    margin-top: -5px; /* Move os elementos para cima */
 }
 
 .header2 h1 {
     margin-bottom: 0; /* Remove a margem inferior */
     font-size: 6vw; /* Tamanho da fonte responsivo */
     padding-left: 1vw; /* Adiciona um espaçamento à esquerda responsivo */
-    text-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.5); /* Adiciona sombra atrás do texto responsiva */
+    text-shadow: 0.5vw 0.5vw 1vw rgb(0, 0, 0); /* Adiciona sombra atrás do texto responsiva */
+    @media screen and (max-width: 768px) {
+        font-size: 9vw;
+        margin-top: 200px;
+    }
 }
 
 .header2 h2 {
     font-size: 6vw; /* Tamanho da fonte responsivo */
-    text-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.5); /* Adiciona sombra atrás do texto responsiva */
+    text-shadow: 0.5vw 0.5vw 1vw rgb(0, 0, 0); /* Adiciona sombra atrás do texto responsiva */
+    @media screen and (max-width: 768px) {
+        font-size: 7vw; /* Tamanho da fonte responsivo */
+        margin-top: 10px;
+    }
 }
 
 .header2 h3 {
     margin-top: -3vh; /* Move os elementos para cima de forma responsiva */
-    font-size: 3vw;
-    text-shadow: 0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.5);
+    font-size: 5vw;
+    text-shadow: 0.3vw 0.3vw 0.6vw rgb(0, 0, 0);
+    @media screen and (max-width: 768px) {
+
+        margin-top: 10px;
+    }
 }
+
 
 
 
