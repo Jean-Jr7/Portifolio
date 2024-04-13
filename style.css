@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -639,6 +643,15 @@ footer:hover {
     @media screen and (max-width: 768px) {
 
         margin-top: 10px;
+    }
+    #particles-js {
+        position: fixed;
+        top: 600%; /* Mover 30% para cima */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        width: 100%;
+        height: 100%;
     }
 }
 
