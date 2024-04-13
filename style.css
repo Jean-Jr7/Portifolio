@@ -88,7 +88,7 @@ footer {
     margin: 20px; /* Margem para separar os quadrados */
     padding: 17px; /* Preenchimento interno responsivo para o texto dentro do quadrado */
     box-sizing: border-box; /* Incluindo preenchimento e borda na largura total */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra sutil */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.76); /* Adicionando uma sombra sutil */
     @media screen and (max-width: 768px) {
         width: calc(100% - 40px); /* Largura de 100% menos a margem */
         margin: 4px; /* Margem menor para telas menores */
