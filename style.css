@@ -80,13 +80,13 @@ footer {
 
 .quadrado {
     color: #000;
-    width: calc(50% - 40px); /* Largura de 50% do contêiner pai menos a margem */
+    width: calc(60% - 50px); /* Largura de 50% do contêiner pai menos a margem */
     height: auto; /* Altura automática para ajustar ao conteúdo */
     background-color: white;
     border: 1px solid #000; /* Borda preta com 1px de espessura */
     border-radius: 20px; /* Bordas minimamente arredondadas */
     margin: 20px; /* Margem para separar os quadrados */
-    padding: 10px; /* Preenchimento interno responsivo para o texto dentro do quadrado */
+    padding: 17px; /* Preenchimento interno responsivo para o texto dentro do quadrado */
     box-sizing: border-box; /* Incluindo preenchimento e borda na largura total */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra sutil */
     @media screen and (max-width: 768px) {
@@ -97,7 +97,7 @@ footer {
 }
 
 .quadrado ul {
-    font-size: 1.4vw; /* Tamanho da fonte responsivo */
+    font-size: 1.2vw; /* Tamanho da fonte responsivo */
     text-align: left;
     margin-bottom: 10px; /* Adicionando margem inferior responsiva */
     line-height: 1.6; /* Adicionando espaçamento entre as linhas de texto */
@@ -107,9 +107,10 @@ footer {
     }
 }
 
-.quadrado h3 {
+.quadrado h4 {
+
     margin-top: 0; /* Remove a margem superior padrão */
-    font-size: 3.5vw; /* Tamanho da fonte responsivo */
+    font-size: 3vw; /* Tamanho da fonte responsivo */
     @media screen and (max-width: 768px) {
         margin-top: 10px; /* Remove a margem superior padrão */
     }
@@ -117,9 +118,9 @@ footer {
 
 .quadrado p {
 
-    font-size: 1.4vw; /* Tamanho da fonte responsivo */
-    text-align: center;
-    line-height: 1.3; /* Adicionando espaçamento entre as linhas de texto */
+    font-size: 1.2vw; /* Tamanho da fonte responsivo */
+    text-align: justify;
+    line-height: 1.5; /* Adicionando espaçamento entre as linhas de texto */
     @media screen and (max-width: 768px) {
         font-size: 2vw; /* Tamanho da fonte responsivo */
     }
@@ -377,6 +378,7 @@ footer {
 }
 
 .quadradoExp ul {
+    text-align: justify;
     padding: 0; /* Remover preenchimento padrão da lista */
     margin: 0; /* Remover margem padrão */
 
@@ -450,6 +452,7 @@ footer {
 }
 
 .projeto p {
+    text-align: justify;
     color: #d9d9d9;
     font-size: 1rem;
     margin-bottom: 15px;
@@ -536,7 +539,7 @@ footer {
 }
 
 .certificado p {
-    text-align: left;
+    text-align: justify;
     color: #070000;
     font-size: 18px;
     margin-bottom: 15px;
