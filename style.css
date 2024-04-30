@@ -97,6 +97,7 @@ footer {
 }
 
 .quadrado ul {
+    letter-spacing: -0.5px;
     font-size: 1.2vw; /* Tamanho da fonte responsivo */
     text-align: left;
     margin-bottom: 10px; /* Adicionando margem inferior responsiva */
@@ -117,7 +118,7 @@ footer {
 }
 
 .quadrado p {
-
+    letter-spacing: -0.5px;
     font-size: 1.2vw; /* Tamanho da fonte responsivo */
     text-align: justify;
     line-height: 1.5; /* Adicionando espaçamento entre as linhas de texto */
