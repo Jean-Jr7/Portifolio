@@ -543,7 +543,23 @@ footer {
     color: #070000;
     font-size: 18px;
     margin-bottom: 15px;
+    letter-spacing: -0.5px;
 }
+
+/* Estilos para dispositivos com largura de tela até 768px (por exemplo, tablets em modo retrato) */
+@media (max-width: 768px) {
+    .certificado p {
+        font-size: 16px; /* Tamanho de fonte menor para telas menores */
+    }
+}
+
+/* Estilos para dispositivos com largura de tela até 480px (por exemplo, celulares em modo retrato) */
+@media (max-width: 480px) {
+    .certificado p {
+        font-size: 14px; /* Tamanho de fonte ainda menor para telas menores */
+    }
+}
+
 .cert{
     background-color:#ffffff;
 }
