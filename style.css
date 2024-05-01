@@ -493,7 +493,7 @@ footer {
 .certificado {
     width: 550px; /* Largura fixa */
     height: 750px; /* Altura fixa */
-    margin: 100px; /* Aumentando o espaçamento entre os certificados */
+    margin: 100px; /* Aumentando o espaçamento entre os certificate */
     background-color: #d9d9d9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(59, 59, 59);
