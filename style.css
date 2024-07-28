@@ -293,109 +293,6 @@ footer {
 }
 
 
-.Exp1 {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(0.25turn, #8d8d8d, #68C6B8);
-    padding: 42px;
-    @media screen and (max-width: 768px) {
-        height: 600px;
-    }
-}
-
-
-.Exp1 h2 {
-    font-family: "Alice", serif;
-    color: #d9d9d9;
-    font-size: 8vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-    margin: 0; /* Remover margem padrão */
-    line-height: 1.2; /* Ajustando a altura da linha para melhorar a aparência do texto em várias linhas */
-    padding-left: 35px;
-
-
-    @media screen and (max-width: 768px) {
-        font-size: 8.2vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-        margin-left: -20%; /* Ajustando a margem esquerda para telas de celulares */
-    }
-}
-
-
-.containerExp {
-    flex: 1; /* Ocupa o restante do espaço disponível */
-    /* Media query para ajustar a margem esquerda em telas de celulares */
-    @media screen and (max-width: 768px) {
-        margin-left: 10%; /* Ajustando a margem esquerda para telas de celulares */
-
-    }
-}
-
-.quadradoExp {
-    height: auto;
-    color: #ffffff;
-    width: 45vw; /* Definindo a largura do retângulo */
-    max-width: 600px; /* Definindo uma largura máxima para evitar que o conteúdo se estenda demais */
-    background-color: rgba(84, 84, 84, 0.55); /* Alterando a cor de fundo para um tom mais escuro */
-    border-radius: 15px; /* Adicionando bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(161, 98, 3, 0.53); /* Adicionando uma sombra sutil */
-    padding: 5vw; /* Utilizando viewport width para tornar o preenchimento interno responsivo */
-    margin-left: 15%; /* Ajustando a margem esquerda */
-    margin-right: auto; /* Empurrar o quadrado mais para a direita */
-
-    /* Media query para ajustar a margem esquerda em telas de celulares */
-    @media screen and (max-width: 768px) {
-        margin-left: 1%; /* Ajustando a margem esquerda para telas de celulares */
-        max-width: 1200px; /* Definindo uma largura máxima para evitar que o conteúdo se estenda demais */
-        width: 50vw; /* Definindo a largura do retângulo */
-    }
-}
-
-
-
-
-.quadradoExp h3 {
-    font-size: 2.5vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-    margin: 0; /* Remover margem padrão */
-    text-align: center;
-}
-
-.quadradoExp h4 {
-    text-align: center;
-    font-size: 1.5vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-    margin: 0; /* Remover margem padrão */
-    line-height: 1.4; /* Ajustando a altura da linha para melhorar a aparência do texto em várias linhas */
-
-    @media screen and (max-width: 768px) {
-        font-size: 3vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-    }
-}
-
-.quadradoExp p {
-    margin: 0; /* Remover margem padrão */
-    font-size: 2.3vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-    @media screen and (max-width: 768px) {
-        font-size: 4vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-    }
-
-}
-
-.quadradoExp ul {
-    text-align: justify;
-    padding: 0; /* Remover preenchimento padrão da lista */
-    margin: 0; /* Remover margem padrão */
-
-}
-
-.quadradoExp li {
-    font-size: 1.1vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-    margin-bottom: 10px;
-    @media screen and (max-width: 768px) {
-        font-size: 3vw; /* Utilizando viewport width para tornar o tamanho da fonte responsivo */
-    }
-}
-
-
-
-
 #Projetos {
     text-align: center;
     padding: 50px 0;
@@ -674,6 +571,7 @@ footer:hover {
         height: 100%;
     }
 }
+
 
 
 
